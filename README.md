@@ -10,10 +10,10 @@ Sites com propostas baseadas nos 12 princípios da ONU.
 
 ## Integrantes
 
-* Sarah Cesar MArtins dos Santos
-* Yanne
-* Carlos
-* Paulo
+* Sarah Cesar Martins dos Santos
+* Yanne Assis Alves
+* Carlos Eduardo Soares de Faria
+* Paulo Gabriel de Souza Lopes
 * Paulo
 * Rodrigo
 
