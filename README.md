@@ -199,6 +199,10 @@ Contém os arquivos no documento: "EtapadeDocumentação" no Repositório do Git
 <li><a href="docs/10-Plano de Testes de Usabilidade.md"> Plano de Testes de Usabilidade</a></li>
 <li><a href="docs/11-Registro de Testes de Usabilidade.md"> Registro de Testes de Usabilidade</a></li>
 <li><a href="docs/12-Apresentação do Projeto.md"> Apresentação do Projeto</a></li>
+Link para os Slides do nosso projeto: https://docs.google.com/presentation/d/1urt2Vc_zu91-Tpw16UNAnb0az402osyOPf4jN9Y5LHA/edit?usp=sharing
+ 
+O slide também se encontra num documento dentro do repositório.
+
 <li><a href="docs/13-Referências.md"> Referências</a></li>
 </ol>
 
