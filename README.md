@@ -14,7 +14,7 @@ Sites com propostas baseadas nos 12 princípios da ONU.
 * Yanne Assis Alves
 * Carlos Eduardo Soares de Faria
 * Paulo Gabriel de Souza Lopes
-* Paulo
+* Paulo Henrique Xavier Lopes
 * Rodrigo Goulart de Paula
 
 ## Orientador
