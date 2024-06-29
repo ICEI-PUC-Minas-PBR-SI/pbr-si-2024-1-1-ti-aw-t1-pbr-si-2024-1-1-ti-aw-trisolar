@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Serviços</title>
+  <!-- Incluindo Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Incluindo arquivo CSS personalizado -->
+  <link rel="stylesheet" href="assets/css/servicos.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <script defer src="SCRIPTS/scriptservicos.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-custom-azul px-3">
+      <a class="navbar-brand" href="inicio.html"><img src="/assets/img/logo/logo-navbar.jfif" alt="Trisolar logo"
+          height="50px"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="produtos.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="servicos.html">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="consultoria.html">Consultoria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="calculadora.html">Calculadora</a>
+          </li>
+        </ul>
+        <div class="text-start justify-content-center">
+          <button type="button" class="btn btn-outline-light me-2"><a class="nav-link"
+              href="login.html">Entrar</a></button>
+          <button type="button" class="btn btn-warning"><a class="nav-link" href="cadastro.html">Cadastrar</a></button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="mt-custom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Texto ao lado do formulário -->
+          <h2 id="texto1">Como funciona o nosso sistema de créditos solares?<br><br></h2>
+          <p id="texto2">1 ) A energia é gerada por uma usina solar.<br><br>
+
+            2 ) Aderindo a um consórcio ou cooperativa, você passa a usufruir da energia gerada pela usina.<br><br>
+
+            3 ) Você terá direito à compensação (créditos) da energia gerada, que será injetada na rede da
+            distribuidora.<br><br>
+
+            4 ) Os créditos dessa energia serão compensados na fatura da distribuidora, gerando redução dos custos de
+            energia.</p>
+          <div id="form-text" class="form-text">Ainda tem dúvidas? <a href="consultoria.html">Fale com um Consultor.</a></div>
+        </div>
+        <div class="col-md-6 bg-custom">
+          <!-- Formulário -->
+          <form class="text-center" id="myForm">
+            <br><br>
+            <h5 class="text-center">Deseja economizar na sua conta de luz?<br><br></h5>
+            <div class="mb-3">
+              <input type="text" class="form-control text-center" id="campoNOME" placeholder="Nome Completo">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control text-center" id="campoEMAIL" placeholder="Email">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control text-center" id="campoCPF" placeholder="CPF / CNPJ">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control text-center" id="campoLogradouro" placeholder="Logradouro">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control text-center" id="campoMunicipioEstado" placeholder="Município/Estado">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control text-center" id="campoConta"
+                placeholder="Média de preços das últimas 3 contas">
+            </div>
+            <div class="mb-3">
+              <p>Data da Compra:</p>
+              <input type="date" class="form-control text-center" id="campoData" placeholder="Data da Compra">
+            </div>Forma de pagamento:</p>
+            <div class="d-flex justify-content-center">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="opcaoDePagamento" id="Radio1" value="PIX">
+                <label class="form-check-label" for="Radio1">PIX</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="opcaoDePagamento" id="Radio2" value="BOLETO">
+                <label class="form-check-label" for="Radio2">BOLETO</label>
+              </div>
+            </div>
+            <button onclick="enviar()" type="button" id="btnContratar" class="btn btn-primary text-center"><a
+                href="compraservicos.html">Contratar</a></button>
+            <div id="form-text" class="form-text">Não possui cadastro? <a href="cadastro.html">Clique aqui</a></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="tela"></div>
+  </main>
+
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-4 border-top bg-custom-footer">
+    <div class="col mb-3 mx-auto my-5 d-md-block d-none">
+      <img src="/assets/img/logo/logo-footer.png" class="img-fluid d-flex align-items-center" alt="Trisolar logo">
+    </div>
+    <div class="col mb-3 d-md-block d-none"></div>
+    <div class="col mb-3">
+      <h5 class="text-center text-white">Mapa do site</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="inicio.html" class="nav-link p-0 text-center text-dark">Início</a></li>
+        <li class="nav-item mb-2"><a href="produtos.html" class="nav-link p-0 text-center text-dark">Produtos</a></li>
+        <li class="nav-item mb-2"><a href="servicos.html" class="nav-link p-0 text-center text-dark">Serviços</a></li>
+        <li class="nav-item mb-2"><a href="consultoria.html" class="nav-link p-0 text-center text-dark">Consultoria</a>
+        </li>
+        <li class="nav-item mb-2"><a href="calculadora.html" class="nav-link p-0 text-center text-dark">Calculadora</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col mb-3">
+      <h5 class="text-center text-white">Contate-nos</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="https://www.gmail.com"
+            class="nav-link p-0 text-center text-dark">trisolar@gmail.com</a>
+      </ul>
+    </div>
+    <p class="text-center text-white">© 2024 Trisolar</p>
+  </footer>
+
+  <!-- Incluindo Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/consultoria.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body onload="forEach()">
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-custom-azul px-3">
+          <a class="navbar-brand" href="inicio.html"><img src="/assets/img/logo/logo-navbar.jfif" alt="Trisolar logo"
+              height="50px"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="produtos.html">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="servicos.html">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="consultoria.html">Consultoria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="calculadora.html">Calculadora</a>
+              </li>
+            </ul>
+            <div class="text-start justify-content-center">
+              <button type="button" class="btn btn-outline-light me-2"><a class="nav-link"
+                  href="login.html">Entrar</a></button>
+              <button type="button" class="btn btn-warning"><a class="nav-link" href="cadastro.html">Cadastrar</a></button>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+    <div class="container mt-4">
+        <h2>Agendamentos</h2>
+        <div id="agendamento" class="card mb-4">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Consultoria Antigas</h5>
+                        <div id="ConsultoriaAntiga"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm">
+                        <h5 class="card-title">Deseja Fazer uma Nova Consultoria?</h5>
+                        <form id="formConsultoria" onsubmit="submitForm(event)">
+                            <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome">
+                            </div>
+                            <div class="form-group">
+                                <label for="cpf">CPF</label>
+                                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Digite o CPF">
+                            </div>
+                            <div class="form-group">
+                                <label for="cep">CEP</label>
+                                <input type="text" class="form-control" id="cep" name="cep" placeholder="Digite o CEP">
+                            </div>
+                            <div class="form-group">
+                                <label for="descricao">Descrição do Problema</label>
+                                <textarea class="form-control" id="descricao" name="descricao" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Confirmar</button>
+                        </form>
+                    </div>
+                    <div class="col-sm">
+                        <div id="map" style="width: 100%; height: 450px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-4 border-top bg-custom-footer">
+        <div class="col mb-3 mx-auto my-5 d-md-block d-none">
+          <img src="/assets/img/logo/logo-footer.png" class="img-fluid d-flex align-items-center" alt="Trisolar logo">
+        </div>
+        <div class="col mb-3 d-md-block d-none"></div>
+        <div class="col mb-3">
+          <h5 class="text-center text-white">Mapa do site</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="inicio.html" class="nav-link p-0 text-center text-dark">Início</a></li>
+            <li class="nav-item mb-2"><a href="produtos.html" class="nav-link p-0 text-center text-dark">Produtos</a></li>
+            <li class="nav-item mb-2"><a href="servicos.html" class="nav-link p-0 text-center text-dark">Serviços</a></li>
+            <li class="nav-item mb-2"><a href="consultoria.html" class="nav-link p-0 text-center text-dark">Consultoria</a>
+            </li>
+            <li class="nav-item mb-2"><a href="calculadora.html" class="nav-link p-0 text-center text-dark">Calculadora</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col mb-3">
+          <h5 class="text-center text-white">Contate-nos</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="https://gmail.com"
+                class="nav-link p-0 text-center text-dark">trisolar@gmail.com</a>
+          </ul>
+        </div>
+        <p class="text-center text-white">© 2024 Trisolar</p>
+      </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/SCRIPTS/consultoria.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

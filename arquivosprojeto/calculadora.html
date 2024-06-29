@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Solar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-custom-azul px-3">
+      <a class="navbar-brand" href="inicio.html"><img src="/assets/img/logo/logo-navbar.jfif" alt="Trisolar logo"
+          height="50px"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="produtos.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="servicos.html">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="consultoria.html">Consultoria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="calculadora.html">Calculadora</a>
+          </li>
+        </ul>
+        <div class="text-start justify-content-center">
+          <button type="button" class="btn btn-outline-light me-2"><a class="nav-link"
+              href="login.html">Entrar</a></button>
+          <button type="button" class="btn btn-warning"><a class="nav-link" href="cadastro.html">Cadastrar</a></button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="mt-custom">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 mx-auto px-4">
+          <img src="assets/img/calculadora/imagem-lado.jfif" alt="Imagem de senivpetro no Freepik"
+            class="img-fluid d-md-block d-none position-static" width="400px">
+        </div>
+        <div class="col-md-9">
+          <div class="container mt-4 px-0">
+            <h2>Calculadora Solar</h2>
+            <p>Para fazermos os cálculos, preencha algumas informações:</p>
+            <p>Você utilizará placas solares ou geradores?</p>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="d-flex justify-content-between">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Checkbox1">
+                    <label class="form-check-label" for="Checkbox1">Placas Solares</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Checkbox2">
+                    <label class="form-check-label" for="Checkbox2">Geradores</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p><br>Qual foi o valor da conta de luz do local no último mês?</p>
+                <input type="text" class="form-control mb-2" placeholder="Escreva o valor" id="num1">
+                <p>Qual foi o valor da conta de luz do local no penúltimo mês?</p>
+                <input type="text" class="form-control mb-2" placeholder="Escreva o valor" id="num2">
+                <p>Qual foi o valor da conta de luz do local no ante-penúltimo mês?</p>
+                <input type="text" class="form-control mb-2" placeholder="Escreva o valor" id="num3">
+                <button class="btn btn-warning" id="calculateBtn">Calcular</button>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col">
+                <p id="resultado"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-4 border-top bg-custom-footer">
+    <div class="col mb-3 mx-auto my-5 d-md-block d-none">
+      <img src="/assets/img/logo/logo-footer.png" class="img-fluid d-flex align-items-center" alt="Trisolar logo">
+    </div>
+    <div class="col mb-3 d-md-block d-none"></div>
+    <div class="col mb-3">
+      <h5 class="text-center text-white">Mapa do site</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="inicio.html" class="nav-link p-0 text-center text-dark">Início</a></li>
+        <li class="nav-item mb-2"><a href="produtos.html" class="nav-link p-0 text-center text-dark">Produtos</a></li>
+        <li class="nav-item mb-2"><a href="servicos.html" class="nav-link p-0 text-center text-dark">Serviços</a></li>
+        <li class="nav-item mb-2"><a href="consultoria.html" class="nav-link p-0 text-center text-dark">Consultoria</a>
+        </li>
+        <li class="nav-item mb-2"><a href="calculadora.html" class="nav-link p-0 text-center text-dark">Calculadora</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col mb-3">
+      <h5 class="text-center text-white">Contate-nos</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="https://gmail.com"
+            class="nav-link p-0 text-center text-dark">trisolar@gmail.com</a>
+      </ul>
+    </div>
+    <p class="text-center text-white">© 2024 Trisolar</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="SCRIPTS/calculadora.js"></script>
+</body>
+
+</html>

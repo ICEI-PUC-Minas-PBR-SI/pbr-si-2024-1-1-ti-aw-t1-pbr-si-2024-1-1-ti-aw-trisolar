@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Serviços</title>
+  <!-- Incluindo Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Incluindo arquivo CSS personalizado -->
+  <link rel="stylesheet" href="assets/css/compraservicos.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <script src="SCRIPTS/script2compras.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-custom-azul px-3">
+      <a class="navbar-brand" href="inicio.html"><img src="/assets/img/logo/logo-navbar.jfif" alt="Trisolar logo"
+          height="50px"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="produtos.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="servicos.html">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="consultoria.html">Consultoria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="calculadora.html">Calculadora</a>
+          </li>
+        </ul>
+        <div class="text-start justify-content-center">
+          <button type="button" class="btn btn-outline-light me-2"><a class="nav-link"
+              href="login.html">Entrar</a></button>
+          <button type="button" class="btn btn-warning"><a class="nav-link" href="cadastro.html">Cadastrar</a></button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="mt-custom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 ">
+          <!-- Texto ao lado do formulário -->
+          <h1 id="texto1">Minhas Compras <br> Créditos de Energia<br></h1>
+          <div id="texto2">
+          <br><p id="nometxt"></p><br>
+          <p id="emailtxt"></p><br>
+          <p id="cpftxt"></p><br>
+          <p id="logradourotxt"></p><br>
+          <p id="municipioestadotxt"></p><br>
+          </div>
+          <div id="form-text" class="form-text">Ainda tem dúvidas? <a href="#">Tire através do WhatsApp</a></div>
+        </div>
+        <div class="col-md-6 bg-custom text-center" >
+            <h3>Status da Compra<br></h3>
+            <p id="EF">EFETUADO</p>
+          <p id="pagamentotxt"></p>
+          <p id="contatxt"><br><br></p>
+          <p id="datatxt"><br><br><br></p>
+
+          <a href="SCRIPT S/BOLETO.pdf" download>
+            <button type="button" class="btn btn-primary">
+              Baixe o boleto aqui
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                <path d="M8 1a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V1.5A.5.5 0 0 1 8 1z"/>
+                <path d="M4.5 11.793a.5.5 0 0 1 .707 0L8 14.086l2.793-2.793a.5.5 0 0 1 .707.707l-3 3a.5.5 0 0 1-.707 0l-3-3a.5.5 0 0 1 0-.707z"/>
+                <path d="M8 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0v-1a.5.5 0 0 1 .5-.5z"/>
+              </svg>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+      <script>
+          buscarBanco();
+      </script>
+  </main>
+
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-4 border-top bg-custom-footer">
+    <div class="col mb-3 mx-auto my-5 d-md-block d-none">
+      <img src="/assets/img/logo/logo-footer.png" class="img-fluid d-flex align-items-center" alt="Trisolar logo">
+    </div>
+    <div class="col mb-3 d-md-block d-none"></div>
+    <div class="col mb-3">
+      <h5 class="text-center text-white">Mapa do site</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="inicio.html" class="nav-link p-0 text-center text-dark">Início</a></li>
+        <li class="nav-item mb-2"><a href="produtos.html" class="nav-link p-0 text-center text-dark">Produtos</a></li>
+        <li class="nav-item mb-2"><a href="servicos.html" class="nav-link p-0 text-center text-dark">Serviços</a></li>
+        <li class="nav-item mb-2"><a href="consultoria.html" class="nav-link p-0 text-center text-dark">Consultoria</a>
+        </li>
+        <li class="nav-item mb-2"><a href="calculadora.html" class="nav-link p-0 text-center text-dark">Calculadora</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col mb-3">
+      <h5 class="text-center text-white">Contate-nos</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="https://gmail.com"
+            class="nav-link p-0 text-center text-dark">trisolar@gmail.com</a>
+      </ul>
+    </div>
+    <p class="text-center text-white">© 2024 Trisolar</p>
+  </footer>
+
+  <!-- Incluindo Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
