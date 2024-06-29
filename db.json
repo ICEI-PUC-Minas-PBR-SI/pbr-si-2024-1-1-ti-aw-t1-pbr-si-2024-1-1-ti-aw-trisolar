@@ -1,0 +1,55 @@
+{
+  "user": [
+    {},
+    {
+      "nome": "55555",
+      "email": "555",
+      "cpf": "5555",
+      "conta": "112.11",
+      "logradouro": "5555",
+      "municipioestado": "555",
+      "data": "2024-07-14",
+      "pagamento": "BOLETO",
+      "id": 3
+    }
+  ],
+  "Consultoria": [
+    {
+      "id": "ef6b",
+      "nome": "paulo",
+      "cpf": "23232",
+      "local": "ergs4",
+      "descricao": "f"
+    },
+    {
+      "nome": "Rodrigo",
+      "cpf": "12345",
+      "local": "Rua Grande Otelo, Inconfidentes, Contagem, MG",
+      "descricao": "sarag",
+      "id": "pN1sd-d"
+    }
+  ],
+  "usuario": [
+    {
+      "id": "1",
+      "nome": "Ana",
+      "sobrenome": "Clara",
+      "email": "anaclara@gmail.com",
+      "senha": "1234"
+    },
+    {
+      "id": "2",
+      "nome": "Arthur",
+      "sobrenome": "Silva",
+      "email": "arthursilva@gmail.com",
+      "senha": "12345"
+    },
+    {
+      "nome": "Sarah",
+      "sobrenome": "Martins",
+      "senha": "1234",
+      "email": "sarah@",
+      "id": "HADFU06"
+    }
+  ]
+}
