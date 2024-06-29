@@ -1,0 +1,100 @@
+body {
+  background-image: url('/assets/img/inicio/1324.jfif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.1%;
+}
+
+.row {
+  background-color: rgb(1, 36, 116, 0.6);
+  color: white;
+  border-radius: 20px 20px 20px 20px;
+}
+
+#form-text {
+  color: lightgray;
+  margin-top: 3%;
+  padding: 2% 0% 8% 9%;
+}
+
+.form-control {
+  border-radius: 20px 20px 20px 20px;
+}
+
+.bg-custom {
+  background-color: rgb(1, 36, 116, 0.7);
+  border-radius: 20px 20px 20px 20px;
+  padding: 0% 8% 0% 8%;
+}
+
+#texto1 {
+  margin-top: 25%;
+  padding: 0% 0% 0% 9%;
+}
+
+#texto2 {
+  margin-top: 3%;
+  padding: 0% 0% 0% 9%;
+}
+
+.btn-primary {
+  border-radius: 20px 20px 20px 20px;
+  margin-top: 12%;
+}
+@media (max-width: 1315px) {
+  body{
+    height: 90vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  body{
+    height: 110vh;
+  }
+}
+@media (max-width: 700px) {
+  body{
+    height: 180vh;
+  }
+}
+#btnContratar a{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/*
+.navbar-brand img {
+  height: 60px;
+  padding-left: 10%;
+}
+.profile-photo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.navbar-nav {
+  margin-right: 10px;
+  margin-left: 20px;
+  color: white;
+}
+.navbar{
+  background-color: #124667;
+}
+.navbar-text{
+  padding-right: 4%;
+}*/

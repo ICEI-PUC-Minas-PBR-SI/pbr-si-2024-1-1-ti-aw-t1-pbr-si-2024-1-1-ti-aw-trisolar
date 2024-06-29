@@ -1,0 +1,29 @@
+body {
+  margin: 0px;
+}
+
+.mt-custom {
+  margin-top: 76px;
+}
+
+.bg-custom-azul {
+  background-color: #154d70;
+}
+
+.bg-custom-footer {
+  background-color: #20648b;
+}
+
+.bg-custom-amarelo {
+  background-color: #f0c62a;
+}
+
+.bg-custom-azul-claro {
+  background-color: #0374b5;
+}
+
+.text-custom-amarelo {
+  color: #f0c62a;
+}
+
+

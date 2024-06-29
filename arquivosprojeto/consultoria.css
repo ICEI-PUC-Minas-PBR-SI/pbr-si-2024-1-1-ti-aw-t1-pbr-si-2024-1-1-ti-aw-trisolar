@@ -1,0 +1,55 @@
+body {
+  padding-top: 56px;
+}
+#agendamento .card-title {
+  display: flex;
+  align-items: center;
+}
+
+#agendamento .card-title::before {
+  content: "\f007"; /* Unicode do ícone de usuário */
+  font-family: "FontAwesome";
+  margin-right: 10px;
+  font-size: 24px;
+}
+.sucesso{
+  background-color: rgb(1, 36, 116, 0.0);
+  color: beige;
+
+}
+.card-body{
+background-color: rgb(1, 36, 116, 0.7);
+border-radius: 1%;
+color: beige;
+}
+
+.imagemaps{
+  display: flex;
+  place-content: center;  /* Centraliza horizontalmente e verticalmente */
+  border-top: 40%;
+  height: 100%;
+  text-align: center;
+}
+.mt-custom {
+  margin-top: 76px;
+}
+
+.bg-custom-azul {
+  background-color: #154d70;
+}
+
+.bg-custom-footer {
+  background-color: #20648b;
+}
+
+.bg-custom-amarelo {
+  background-color: #f0c62a;
+}
+
+.bg-custom-azul-claro {
+  background-color: #0374b5;
+}
+
+.text-custom-amarelo {
+  color: #f0c62a;
+}
